@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE2403251C7D63DE00849652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2403241C7D63DE00849652 /* AppDelegate.swift */; };
+		EE2403271C7D63DE00849652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2403261C7D63DE00849652 /* ViewController.swift */; };
+		EE24032A1C7D63DE00849652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2403281C7D63DE00849652 /* Main.storyboard */; };
+		EE24032C1C7D63DE00849652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE24032B1C7D63DE00849652 /* Assets.xcassets */; };
+		EE24032F1C7D63DE00849652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24032D1C7D63DE00849652 /* LaunchScreen.storyboard */; };
+		EE24033A1C7D63DE00849652 /* OCTannerCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2403391C7D63DE00849652 /* OCTannerCodeChallengeTests.swift */; };
+		EE2403451C7D63DE00849652 /* OCTannerCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2403441C7D63DE00849652 /* OCTannerCodeChallengeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE2403361C7D63DE00849652 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE2403191C7D63DE00849652 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE2403201C7D63DE00849652;
+			remoteInfo = OCTannerCodeChallenge;
+		};
+		EE2403411C7D63DE00849652 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE2403191C7D63DE00849652 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE2403201C7D63DE00849652;
+			remoteInfo = OCTannerCodeChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE2403211C7D63DE00849652 /* OCTannerCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCTannerCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2403241C7D63DE00849652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE2403261C7D63DE00849652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE2403291C7D63DE00849652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE24032B1C7D63DE00849652 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE24032E1C7D63DE00849652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE2403301C7D63DE00849652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2403351C7D63DE00849652 /* OCTannerCodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCTannerCodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2403391C7D63DE00849652 /* OCTannerCodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCTannerCodeChallengeTests.swift; sourceTree = "<group>"; };
+		EE24033B1C7D63DE00849652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE2403401C7D63DE00849652 /* OCTannerCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCTannerCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE2403441C7D63DE00849652 /* OCTannerCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCTannerCodeChallengeUITests.swift; sourceTree = "<group>"; };
+		EE2403461C7D63DE00849652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE24031E1C7D63DE00849652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2403321C7D63DE00849652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE24033D1C7D63DE00849652 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE2403181C7D63DE00849652 = {
+			isa = PBXGroup;
+			children = (
+				EE2403231C7D63DE00849652 /* OCTannerCodeChallenge */,
+				EE2403381C7D63DE00849652 /* OCTannerCodeChallengeTests */,
+				EE2403431C7D63DE00849652 /* OCTannerCodeChallengeUITests */,
+				EE2403221C7D63DE00849652 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE2403221C7D63DE00849652 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE2403211C7D63DE00849652 /* OCTannerCodeChallenge.app */,
+				EE2403351C7D63DE00849652 /* OCTannerCodeChallengeTests.xctest */,
+				EE2403401C7D63DE00849652 /* OCTannerCodeChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE2403231C7D63DE00849652 /* OCTannerCodeChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				EE2403241C7D63DE00849652 /* AppDelegate.swift */,
+				EE2403261C7D63DE00849652 /* ViewController.swift */,
+				EE2403281C7D63DE00849652 /* Main.storyboard */,
+				EE24032B1C7D63DE00849652 /* Assets.xcassets */,
+				EE24032D1C7D63DE00849652 /* LaunchScreen.storyboard */,
+				EE2403301C7D63DE00849652 /* Info.plist */,
+			);
+			path = OCTannerCodeChallenge;
+			sourceTree = "<group>";
+		};
+		EE2403381C7D63DE00849652 /* OCTannerCodeChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE2403391C7D63DE00849652 /* OCTannerCodeChallengeTests.swift */,
+				EE24033B1C7D63DE00849652 /* Info.plist */,
+			);
+			path = OCTannerCodeChallengeTests;
+			sourceTree = "<group>";
+		};
+		EE2403431C7D63DE00849652 /* OCTannerCodeChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE2403441C7D63DE00849652 /* OCTannerCodeChallengeUITests.swift */,
+				EE2403461C7D63DE00849652 /* Info.plist */,
+			);
+			path = OCTannerCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE2403201C7D63DE00849652 /* OCTannerCodeChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE2403491C7D63DE00849652 /* Build configuration list for PBXNativeTarget "OCTannerCodeChallenge" */;
+			buildPhases = (
+				EE24031D1C7D63DE00849652 /* Sources */,
+				EE24031E1C7D63DE00849652 /* Frameworks */,
+				EE24031F1C7D63DE00849652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCTannerCodeChallenge;
+			productName = OCTannerCodeChallenge;
+			productReference = EE2403211C7D63DE00849652 /* OCTannerCodeChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE2403341C7D63DE00849652 /* OCTannerCodeChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE24034C1C7D63DE00849652 /* Build configuration list for PBXNativeTarget "OCTannerCodeChallengeTests" */;
+			buildPhases = (
+				EE2403311C7D63DE00849652 /* Sources */,
+				EE2403321C7D63DE00849652 /* Frameworks */,
+				EE2403331C7D63DE00849652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE2403371C7D63DE00849652 /* PBXTargetDependency */,
+			);
+			name = OCTannerCodeChallengeTests;
+			productName = OCTannerCodeChallengeTests;
+			productReference = EE2403351C7D63DE00849652 /* OCTannerCodeChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE24033F1C7D63DE00849652 /* OCTannerCodeChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE24034F1C7D63DE00849652 /* Build configuration list for PBXNativeTarget "OCTannerCodeChallengeUITests" */;
+			buildPhases = (
+				EE24033C1C7D63DE00849652 /* Sources */,
+				EE24033D1C7D63DE00849652 /* Frameworks */,
+				EE24033E1C7D63DE00849652 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE2403421C7D63DE00849652 /* PBXTargetDependency */,
+			);
+			name = OCTannerCodeChallengeUITests;
+			productName = OCTannerCodeChallengeUITests;
+			productReference = EE2403401C7D63DE00849652 /* OCTannerCodeChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE2403191C7D63DE00849652 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Derik Flanary";
+				TargetAttributes = {
+					EE2403201C7D63DE00849652 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					EE2403341C7D63DE00849652 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EE2403201C7D63DE00849652;
+					};
+					EE24033F1C7D63DE00849652 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EE2403201C7D63DE00849652;
+					};
+				};
+			};
+			buildConfigurationList = EE24031C1C7D63DE00849652 /* Build configuration list for PBXProject "OCTannerCodeChallenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE2403181C7D63DE00849652;
+			productRefGroup = EE2403221C7D63DE00849652 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE2403201C7D63DE00849652 /* OCTannerCodeChallenge */,
+				EE2403341C7D63DE00849652 /* OCTannerCodeChallengeTests */,
+				EE24033F1C7D63DE00849652 /* OCTannerCodeChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE24031F1C7D63DE00849652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE24032F1C7D63DE00849652 /* LaunchScreen.storyboard in Resources */,
+				EE24032C1C7D63DE00849652 /* Assets.xcassets in Resources */,
+				EE24032A1C7D63DE00849652 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2403331C7D63DE00849652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE24033E1C7D63DE00849652 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE24031D1C7D63DE00849652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2403271C7D63DE00849652 /* ViewController.swift in Sources */,
+				EE2403251C7D63DE00849652 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2403311C7D63DE00849652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE24033A1C7D63DE00849652 /* OCTannerCodeChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE24033C1C7D63DE00849652 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2403451C7D63DE00849652 /* OCTannerCodeChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE2403371C7D63DE00849652 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE2403201C7D63DE00849652 /* OCTannerCodeChallenge */;
+			targetProxy = EE2403361C7D63DE00849652 /* PBXContainerItemProxy */;
+		};
+		EE2403421C7D63DE00849652 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE2403201C7D63DE00849652 /* OCTannerCodeChallenge */;
+			targetProxy = EE2403411C7D63DE00849652 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE2403281C7D63DE00849652 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE2403291C7D63DE00849652 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE24032D1C7D63DE00849652 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE24032E1C7D63DE00849652 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE2403471C7D63DE00849652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE2403481C7D63DE00849652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE24034A1C7D63DE00849652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OCTannerCodeChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derikflanary.OCTannerCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE24034B1C7D63DE00849652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OCTannerCodeChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derikflanary.OCTannerCodeChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE24034D1C7D63DE00849652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OCTannerCodeChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derikflanary.OCTannerCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCTannerCodeChallenge.app/OCTannerCodeChallenge";
+			};
+			name = Debug;
+		};
+		EE24034E1C7D63DE00849652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OCTannerCodeChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derikflanary.OCTannerCodeChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCTannerCodeChallenge.app/OCTannerCodeChallenge";
+			};
+			name = Release;
+		};
+		EE2403501C7D63DE00849652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OCTannerCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derikflanary.OCTannerCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OCTannerCodeChallenge;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EE2403511C7D63DE00849652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OCTannerCodeChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derikflanary.OCTannerCodeChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OCTannerCodeChallenge;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE24031C1C7D63DE00849652 /* Build configuration list for PBXProject "OCTannerCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2403471C7D63DE00849652 /* Debug */,
+				EE2403481C7D63DE00849652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE2403491C7D63DE00849652 /* Build configuration list for PBXNativeTarget "OCTannerCodeChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE24034A1C7D63DE00849652 /* Debug */,
+				EE24034B1C7D63DE00849652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE24034C1C7D63DE00849652 /* Build configuration list for PBXNativeTarget "OCTannerCodeChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE24034D1C7D63DE00849652 /* Debug */,
+				EE24034E1C7D63DE00849652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE24034F1C7D63DE00849652 /* Build configuration list for PBXNativeTarget "OCTannerCodeChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE2403501C7D63DE00849652 /* Debug */,
+				EE2403511C7D63DE00849652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE2403191C7D63DE00849652 /* Project object */;
+}
