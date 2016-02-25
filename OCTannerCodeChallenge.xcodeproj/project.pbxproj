@@ -14,6 +14,9 @@
 		EE24032F1C7D63DE00849652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE24032D1C7D63DE00849652 /* LaunchScreen.storyboard */; };
 		EE24033A1C7D63DE00849652 /* OCTannerCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2403391C7D63DE00849652 /* OCTannerCodeChallengeTests.swift */; };
 		EE2403451C7D63DE00849652 /* OCTannerCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2403441C7D63DE00849652 /* OCTannerCodeChallengeUITests.swift */; };
+		EEF18C801C7E177B0046B64D /* CountingScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF18C7F1C7E177B0046B64D /* CountingScrollView.swift */; };
+		EEF18C841C7E6C910046B64D /* CenterLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF18C831C7E6C910046B64D /* CenterLine.swift */; };
+		EEF18C861C7EBD1C0046B64D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF18C851C7EBD1C0046B64D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		EE2403401C7D63DE00849652 /* OCTannerCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCTannerCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE2403441C7D63DE00849652 /* OCTannerCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCTannerCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		EE2403461C7D63DE00849652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEF18C7F1C7E177B0046B64D /* CountingScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountingScrollView.swift; sourceTree = "<group>"; };
+		EEF18C831C7E6C910046B64D /* CenterLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterLine.swift; sourceTree = "<group>"; };
+		EEF18C851C7EBD1C0046B64D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 			children = (
 				EE2403241C7D63DE00849652 /* AppDelegate.swift */,
 				EE2403261C7D63DE00849652 /* ViewController.swift */,
+				EEF18C7F1C7E177B0046B64D /* CountingScrollView.swift */,
+				EEF18C831C7E6C910046B64D /* CenterLine.swift */,
+				EEF18C851C7EBD1C0046B64D /* Extensions.swift */,
 				EE2403281C7D63DE00849652 /* Main.storyboard */,
 				EE24032B1C7D63DE00849652 /* Assets.xcassets */,
 				EE24032D1C7D63DE00849652 /* LaunchScreen.storyboard */,
@@ -256,6 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF18C861C7EBD1C0046B64D /* Extensions.swift in Sources */,
+				EEF18C841C7E6C910046B64D /* CenterLine.swift in Sources */,
+				EEF18C801C7E177B0046B64D /* CountingScrollView.swift in Sources */,
 				EE2403271C7D63DE00849652 /* ViewController.swift in Sources */,
 				EE2403251C7D63DE00849652 /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +496,7 @@
 				EE24034B1C7D63DE00849652 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE24034C1C7D63DE00849652 /* Build configuration list for PBXNativeTarget "OCTannerCodeChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +505,7 @@
 				EE24034E1C7D63DE00849652 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE24034F1C7D63DE00849652 /* Build configuration list for PBXNativeTarget "OCTannerCodeChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +514,7 @@
 				EE2403511C7D63DE00849652 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

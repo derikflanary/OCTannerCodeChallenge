@@ -8,18 +8,74 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UIScrollViewDelegate{
+    
+    //MARK: - PROPERTIES
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var countingScrollView: CountingScrollView!
+    @IBOutlet weak var centerLine: CenterLine!
+    @IBOutlet weak var saveButton: UIButton!
+    
+    //MARK: - VIEW SETUP
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Setup counting scrollview
+        countingScrollView.setup()
+        countingScrollView.delegate = self
+        countingScrollView.maxCount(500)
+        countingScrollView.minCount(0)
+        countingScrollView.sizeConstant(16)
+        
+        //Set count equal to count property of scrollview
+        countLabel.text = "\(countingScrollView.count)"
+        
+        //Adjust layout of Save Button
+        saveButton.backgroundColor = UIColor(white: 0.8, alpha: 1)
+        saveButton.layer.cornerRadius = saveButton.bounds.height/2
+        saveButton.clipsToBounds = true
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        //Bring center line to front after scrollview adds its subviews
+        self.view.bringSubviewToFront(centerLine)
+    }
+    
+    //MARK: - BUTTON FUNCTIONS
+    @IBAction func savePressed(sender: AnyObject) {
+        print("Save Pressed")
+        NSUserDefaults.standardUserDefaults().setInteger(countingScrollView.count, forKey: "Weight")
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    //MARK: - SCROLLVIEW DELEGATE
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        //Update label text with changes in scrollview
+        countLabel.text = "\(countingScrollView.count)"
     }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        
+        countingScrollView.centerOnX(originalX: scrollView.contentOffset.x)
+    }
+    
+    func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
+        
+        countingScrollView.centerOnX(originalX: scrollView.contentOffset.x)
 
-
+    }
+    
+    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        if !decelerate{
+            
+            countingScrollView.centerOnX(originalX: scrollView.contentOffset.x)
+        }
+    }
+    
 }
+
+
 
