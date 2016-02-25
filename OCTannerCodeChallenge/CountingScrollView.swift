@@ -17,12 +17,13 @@ class CountingScrollView: UIScrollView{
     }
     
     //MARK: - PROPERTIES
-    private(set) internal var count : Int = 0
+    private(set) internal var count = 0
     private var maxCount : Int = 500
     private var minCount : Int = 0
-    private(set) internal var sizeConstant : CGFloat = 16
+    private(set) internal var lineSpacing : CGFloat = 16
     private var firstLoad = true
     private var lineHeight : CGFloat = 25
+    private var lines = [CAShapeLayer]()
     
     //MARK: - UI SETUP
     func setup() {
@@ -31,21 +32,22 @@ class CountingScrollView: UIScrollView{
         
         self.decelerationRate = 0.994
         
-        self.contentOffset = CGPointMake(0, contentOffset.y)
-        
     }
     
     override func layoutSubviews() {
         
+        super.layoutSubviews()
+        
         if firstLoad{
             
-            loadCount()
+            setNewContentSize()
             
-            self.contentSize = CGSizeMake((CGFloat(maxCount) * sizeConstant) + frame.width, frame.height) //set initial content size
+            loadCount()
             
             drawLines()
             
             firstLoad = false
+            
         }
         
         calculateCount()
@@ -54,7 +56,7 @@ class CountingScrollView: UIScrollView{
     //MARK: - COUNT CALCULATION METHODS
     private func calculateCount() {
         
-        count = Int(round(contentOffset.x/sizeConstant)) + minCount
+        count = Int(round(contentOffset.x / lineSpacing)) + minCount
         
         //Keep count from going negative when bouncing
         if count < minCount{
@@ -73,8 +75,8 @@ class CountingScrollView: UIScrollView{
         //Load weight from defaults
         count = NSUserDefaults.standardUserDefaults().integerForKey("Weight")
         
-        //Scroll to that weights location
-        self.setContentOffset(CGPointMake(round(CGFloat(count) * sizeConstant), self.contentOffset.y), animated: true)
+        //Scroll to that weight's location
+        self.setContentOffset(CGPointMake(round(CGFloat(count * Int(lineSpacing))), self.contentOffset.y), animated: true)
     }
     
     //MARK: - DRAW LINES
@@ -116,7 +118,9 @@ class CountingScrollView: UIScrollView{
             line.strokeColor = UIColor.lightGrayColor().CGColor
             self.layer.addSublayer(line)
             
-            x += sizeConstant
+            lines.append(line)
+            
+            x += lineSpacing
             
         }while x <= contentSize.width - self.bounds.width/2
     }
@@ -136,32 +140,56 @@ class CountingScrollView: UIScrollView{
         self.count = minCount
     }
     
-    func sizeConstant(constant: CGFloat) {
+    func lineSpacing(constant: CGFloat) {
         
-        self.sizeConstant = constant
+        self.lineSpacing = constant
         
         setNewContentSize()
     }
     
-    func lineHeight(lineHeight: CGFloat) {
+    func lineHeight(var lineHeight: CGFloat) {
+        
+        if lineHeight > bounds.height{
+            
+            lineHeight = bounds.height
+        }
+        
         self.lineHeight = lineHeight
+        
+        resetScrollView()
     }
     
     private func setNewContentSize() {
         //Adjusts Content Size when changes are made to the max count or the size constant
-        self.contentSize = CGSizeMake((CGFloat(maxCount) * sizeConstant) + frame.width, frame.height)
+        self.contentSize = CGSizeMake((CGFloat(maxCount) * lineSpacing) + frame.width, frame.height)
+    }
+    
+    //MARK: - RESETTING SCROLL VIEW ASPECTS
+    func resetScrollView() {
+        
+        for line in lines{
+            line.removeFromSuperlayer()
+        }
+        
+        lines.removeAll()
+        
+        firstLoad = true
+        
+        layoutSubviews()
     }
     
     //MARK: - SCROLL ADJUSTMENT
     func centerOnX(originalX originalX: CGFloat) {
         
         //See if the scrollviews x divided by the size constant is an exact location or not
-        if !(originalX / sizeConstant).isInteger{
+        if !(originalX / lineSpacing).isInteger{
             
-            let newX = round(originalX / sizeConstant)
+            let newX = round(originalX / lineSpacing)
             
             //Scroll to exact location
-            setContentOffset(CGPointMake(newX * sizeConstant, contentOffset.y), animated: true)
+            setContentOffset(CGPointMake(newX * lineSpacing, contentOffset.y), animated: true)
+            
+            calculateCount()
         }
     }
 

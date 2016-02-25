@@ -26,7 +26,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         countingScrollView.delegate = self
         countingScrollView.maxCount(500)
         countingScrollView.minCount(0)
-        countingScrollView.sizeConstant(16)
+        countingScrollView.lineSpacing(16)
         
         //Set count equal to count property of scrollview
         countLabel.text = "\(countingScrollView.count)"
@@ -45,7 +45,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     
     //MARK: - BUTTON FUNCTIONS
     @IBAction func savePressed(sender: AnyObject) {
-        print("Save Pressed")
+
         NSUserDefaults.standardUserDefaults().setInteger(countingScrollView.count, forKey: "Weight")
     }
 
