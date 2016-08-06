@@ -20,7 +20,7 @@ class CountingScrollView: UIScrollView{
     private(set) internal var count = 0
     private var maxCount : Int = 500
     private var minCount : Int = 0
-    private(set) internal var lineSpacing : CGFloat = 16
+    private var lineSpacing : CGFloat = 16
     private var firstLoad = true
     private var lineHeight : CGFloat = 25
     private var lines = [CAShapeLayer]()
@@ -41,8 +41,6 @@ class CountingScrollView: UIScrollView{
         if firstLoad{
             
             setNewContentSize()
-            
-            loadCount()
             
             drawLines()
             
@@ -138,6 +136,8 @@ class CountingScrollView: UIScrollView{
         self.minCount = minCount
         
         self.count = minCount
+        
+        setNewContentSize()
     }
     
     func lineSpacing(constant: CGFloat) {
@@ -173,9 +173,10 @@ class CountingScrollView: UIScrollView{
         
         lines.removeAll()
         
-        firstLoad = true
+        setNewContentSize()
         
-        layoutSubviews()
+        drawLines()
+        
     }
     
     //MARK: - SCROLL ADJUSTMENT

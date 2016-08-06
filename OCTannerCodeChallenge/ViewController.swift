@@ -24,9 +24,9 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         //Setup counting scrollview
         countingScrollView.setup()
         countingScrollView.delegate = self
-        countingScrollView.maxCount(500)
-        countingScrollView.minCount(0)
-        countingScrollView.lineSpacing(16)
+        countingScrollView.maxCount(300)
+        countingScrollView.minCount(50)
+        countingScrollView.lineSpacing(20)
         
         //Set count equal to count property of scrollview
         countLabel.text = "\(countingScrollView.count)"
@@ -59,12 +59,6 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         
         countingScrollView.centerOnX(originalX: scrollView.contentOffset.x)
-    }
-    
-    func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
-        
-        countingScrollView.centerOnX(originalX: scrollView.contentOffset.x)
-
     }
     
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
